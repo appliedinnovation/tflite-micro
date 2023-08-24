@@ -79,7 +79,7 @@ set(priv_req)
 
 # include component requirements which were introduced after IDF version 4.1
 if("${IDF_VERSION_MAJOR}.${IDF_VERSION_MINOR}" VERSION_GREATER "4.1")
-    list(APPEND priv_req esp_timer driver)
+    list(APPEND priv_req esp_timer driver esp-nn)
 endif()
 
 idf_component_register(
